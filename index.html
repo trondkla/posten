@@ -1,0 +1,26 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Bar code generator</title>
+  <meta name="author" content="Trond Klakken">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+  <input type="text" name="kode" id="kode" />
+  <svg id="barcode"></svg>
+  
+  <script src="JsBarcode.all.min.js"></script>
+  <script type="text/javascript">
+      var kodeEl = document.getElementById("kode");
+      kodeEl.addEventListener("input", function(event) {
+         JsBarcode("#barcode", kodeEl.value);
+      });
+  </script>
+</body>
+</html>
