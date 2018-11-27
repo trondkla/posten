@@ -9,11 +9,24 @@
   <meta name="author" content="Trond Klakken">
   <meta name="viewport" content="width=device-width, user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <style>
+    html {
+     text-align: center; 
+    }
+    .center {
+     margin: 1em auto; 
+    }
+  </style>
 </head>
 
 <body>
-  <input type="text" name="kode" id="kode" />
+  <div class="center">
+    <h2>1. Skriv inn sporingsnummer<h2>
+    <input type="text" name="kode" id="kode" />
+  </div>
   <svg id="barcode"></svg>
+      <p>2. Scan koden med appen</p>
   
   <script src="JsBarcode.all.min.js"></script>
   <script type="text/javascript">
